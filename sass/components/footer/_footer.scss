@@ -1,0 +1,23 @@
+.footer {
+    position: relative;
+    margin-top: 50px;
+}
+.footer-button {
+    position: absolute;
+    top: -25px;
+    left: 80px;
+    
+    cursor: pointer;
+}
+.footer-box {
+    display: flex;
+}
+.footer-box-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #000000;
+}
+.footer-box-img {
+    color: #000000;
+}

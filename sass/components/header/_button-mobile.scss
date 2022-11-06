@@ -1,0 +1,70 @@
+.button__mobile {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    margin-right: -20px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.button__mobile svg {
+    height: 40px;
+    width: 60px;
+  }
+  
+  .button__mobile svg {
+    cursor: pointer;
+    height: 30px;
+    transform: translate3d(0px, 0px, 0px);
+    width: 50px;
+  }
+  
+  svg:not(:root) {
+    overflow: hidden;
+  }
+  
+  .button__mobile path.top,
+  .button__mobile path.bottom {
+    stroke-dasharray: 240px, 950px;
+  }
+  
+  .button__mobile path {
+    fill: none;
+    stroke: #ffffff;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+  }
+  
+  .button__mobile path.middle {
+    stroke-dasharray: 240px, 240px;
+  }
+  
+  .button__mobile path {
+    fill: none;
+    stroke: #ffffff;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    stroke-width: 40px;
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s, stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25) 0s;
+  }
+  
+  .button__mobile.active path.top,
+  .button__mobile.active path.bottom {
+    stroke-dashoffset: -650px;
+  }
+  
+  .button__mobile path.top,
+  .button__mobile path.bottom {
+    stroke-dasharray: 240px, 950px;
+  }
+  
+  .button__mobile.active path.middle {
+    stroke-dasharray: 1px, 220px;
+    stroke-dashoffset: -115px;
+  }
