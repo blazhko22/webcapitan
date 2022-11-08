@@ -1,99 +1,134 @@
-.header_section-list-icon-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    @media screen and (min-width: 1366px) {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 15px;
-    }
-}
-.header_section-list-icon {
-    display: flex;
-    flex-direction: column-reverse;
-    margin-top: 15px;
-    @media screen and (min-width: 1366px) {
-        flex-direction: row;
-        margin-top: 0;
-        align-items: center;
-    }
-}
-.header_section-list {
-    margin-top: 15px;
-    @media screen and (min-width: 1366px) {
-        margin-top: 0;
-        margin-right: 25px;
-    }
-    @media screen and (min-width: 1920px) {
-        margin-right: 115px;
-    }
-}
-.header_section-list-products {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    @media screen and (min-width: 768px) {
-        flex-wrap: nowrap;
-    }
-}
-.header_section-list-products-panel {
-    position: relative;
-    margin-bottom: 10px;
+.header__section-box-list {
     display: flex;
     justify-content: center;
-    flex-basis: calc((100% - 20px) / 3);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:nth-last-child(-n + 3) {
-        margin-bottom: 0;
-    }
-    &:hover .header_section-list-products-panel-link,
-    &:focus .header_section-list-products-panel-link {
-        display: block;
-        position: absolute;
-        z-index: 5;
-    }
+    margin-top: 20px;
     @media screen and (min-width: 768px) {
-        margin-bottom: 0;
+        margin-top: 0;
+        align-items: center;
     }
 }
-.header_section-list-products-panel-link {
-    display: none;
-    background-color: $secondary-bg-color;
-    min-width: 113px;
-    top: 20px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    & a {
-        color: $primary-text-color;
-        padding: 12px;
-        text-decoration: none;
-        display: block;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        &:hover,
-        &:focus {
-            color: $primary-bg-color;
+.header__section-box-list-item {
+    margin-left: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 24px;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    & svg {
+        fill: #ffffff;
+        @media screen and (min-width: 768px) {
+            width: 15px;
+            height: 15px;
         }
     }
-}
-.header_section-list-products-panel-text {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $primary-text-color;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    @media screen and (min-width: 1366px) {
-        font-size: 15px;
+    &:hover {
+        & svg {
+            fill: #11749e;
+        }
     }
-    @media screen and (min-width: 1920px) {
-        font-size: 18px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: -5px;
     }
 }
-.header_section-list-products-panel-icon {
-    margin-left: 3px;
-}
+
+
+// .header_section-list-icon-button {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     @media screen and (min-width: 1366px) {
+//         flex-direction: row;
+//         justify-content: space-between;
+//         align-items: center;
+//         margin-top: 15px;
+//     }
+// }
+// .header_section-list-icon {
+//     display: flex;
+//     flex-direction: column-reverse;
+//     margin-top: 15px;
+//     @media screen and (min-width: 1366px) {
+//         flex-direction: row;
+//         margin-top: 0;
+//         align-items: center;
+//     }
+// }
+// .header_section-list {
+//     margin-top: 15px;
+//     @media screen and (min-width: 1366px) {
+//         margin-top: 0;
+//         margin-right: 25px;
+//     }
+//     @media screen and (min-width: 1920px) {
+//         margin-right: 115px;
+//     }
+// }
+// .header_section-list-products {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//     @media screen and (min-width: 768px) {
+//         flex-wrap: nowrap;
+//     }
+// }
+// .header_section-list-products-panel {
+//     position: relative;
+//     margin-bottom: 10px;
+//     display: flex;
+//     justify-content: center;
+//     flex-basis: calc((100% - 20px) / 3);
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     &:nth-last-child(-n + 3) {
+//         margin-bottom: 0;
+//     }
+//     &:hover .header_section-list-products-panel-link,
+//     &:focus .header_section-list-products-panel-link {
+//         display: block;
+//         position: absolute;
+//         z-index: 5;
+//     }
+//     @media screen and (min-width: 768px) {
+//         margin-bottom: 0;
+//     }
+// }
+// .header_section-list-products-panel-link {
+//     display: none;
+//     background-color: $secondary-bg-color;
+//     min-width: 113px;
+//     top: 20px;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//     & a {
+//         color: $primary-text-color;
+//         padding: 12px;
+//         text-decoration: none;
+//         display: block;
+//         transition-duration: 250ms;
+//         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//         &:hover,
+//         &:focus {
+//             color: $primary-bg-color;
+//         }
+//     }
+// }
+// .header_section-list-products-panel-text {
+//     display: flex;
+//     align-items: center;
+//     font-size: 12px;
+//     text-transform: uppercase;
+//     color: $primary-text-color;
+//     background-color: transparent;
+//     border: none;
+//     cursor: pointer;
+//     @media screen and (min-width: 1366px) {
+//         font-size: 15px;
+//     }
+//     @media screen and (min-width: 1920px) {
+//         font-size: 18px;
+//     }
+// }
+// .header_section-list-products-panel-icon {
+//     margin-left: 3px;
+// }

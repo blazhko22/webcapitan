@@ -13,6 +13,12 @@
     width: 35px;
     height: 35px;
     background-color: #ffffff;
+    @media screen and (min-width: 1200px) {
+        width: 67px;
+        height: 67px;
+        top: 12px;
+        left: 12px;
+    }
 }
 .header__section-logo-link-up {
     font-family: "Open Sans";
@@ -28,4 +34,9 @@
     height: 35px;
     background-color: #11749e;
     z-index: 1;
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        width: 67px;
+        height: 67px;
+    }
 }
