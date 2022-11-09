@@ -1362,6 +1362,7 @@ svg:not(:root) {
   padding: 10px;
   margin-top: 25px;
   width: 120px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1200px) {
